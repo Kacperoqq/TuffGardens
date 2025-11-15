@@ -1,0 +1,30 @@
+/* ==============================
+   Paleta kolorów – strona ogrodnicza
+   ============================== */
+
+:root {
+  /* Kolor główny – zieleń liści */
+  --main-color: #4CAF50;       
+  --main-color-dark: #388E3C;  /* ciemniejszy odcień do hoverów */
+
+  /* Kolor akcentowy – kwiaty, przyciski */
+  --secondary-color: #FFD54F;  
+  --secondary-color-dark: #FFB300;
+
+  /* Kolory tła */
+  --background-light: #FAFAFA;   /* jasne tło sekcji */
+  --background-dark: #C8E6C9;    /* miękka zieleń dla akcentów */
+
+  /* Kolory tekstu */
+  --text-color: #333333;          /* ciemny szary do paragrafów */
+  --text-color-light: #FFFFFF;    /* np. na przyciskach */
+
+  /* Brązy / ziemia */
+  --earth-brown: #795548;
+  --earth-light: #D7CCC8;
+
+  /* Dodatkowe akcenty (np. kwiaty, owoce) */
+  --accent-red: #E53935;
+  --accent-purple: #8E24AA;
+  --accent-orange: #FB8C00;
+}

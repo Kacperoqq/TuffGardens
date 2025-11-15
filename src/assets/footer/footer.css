@@ -1,0 +1,87 @@
+@import '../../color.css'; 
+
+/* Stopka */
+.footer {
+  background-color: var(--main-color);
+  color: var(--text-color-light);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10%;
+}
+
+/* Górna część stopki – social + kontakt */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.social-icons svg {
+  margin-right: 10px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons svg:hover {
+  transform: scale(1.2);
+  color: var(--secondary-color);
+}
+
+/* Sekcje */
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+/* Social Media */
+.footer-section.social h3,
+.footer-section.contact h3 {
+  margin-bottom: 15px;
+}
+
+.footer-section.social .social-icons a {
+  display: block;
+  color: var(--text-color-light);
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-section.social .social-icons a:hover {
+  color: var(--secondary-color);
+}
+
+/* Kontakt */
+.footer-section.contact p {
+  margin: 5px 0;
+}
+
+/* Dolna część stopki – copyright */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid var(--secondary-color);
+  padding-top: 15px;
+  font-size: 0.9rem;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-section {
+    margin: 10px 0;
+  }
+}
+
+.contact{
+text-align: center;
+}
+
+.social{
+    text-align: center;
+}

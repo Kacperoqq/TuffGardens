@@ -1,0 +1,101 @@
+@import '../../../color.css';
+.glowna-container {
+  position: relative;
+  width: 100%;   /* pełna wysokość ekranu */
+  overflow: hidden;
+}
+
+#ogrod {
+  width: 100%;
+  height: 100%;         /* rozciąga wysokość kontenera */
+  object-fit: cover;     /* zachowuje proporcje i przycina nadmiar */
+}
+
+/* Napis absolutny */
+.overlay-text {
+  position: absolute;
+  top: 10%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(76, 174, 79,0.5);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;          /* opcjonalnie, żeby nie był na całej szerokości */
+}
+.glowna-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.glowna-container img.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.glowna-container img.slide.active {
+  opacity: 1;
+}
+
+/* Napis absolutny */
+.overlay-text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsywność napisu */
+@media (max-width: 500px) {
+  .overlay-text {
+    font-size: 1.5rem;
+  }
+}
+.glowna-container {
+  position: relative;
+  width: 100%;
+  height: 500px;           /* wysokość slidera / obrazka */
+  overflow: hidden;        /* przycina nadmiar obrazu */
+}
+
+#ogrod {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* przycina górę/dół, obraz wypełnia szerokość */
+  object-position: center; /* centrowanie przyciętego obrazu */
+}
+
+
+.overlay-text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+}
+/* cofamy się do src i importujemy colors.css */
+
+/* Teraz możesz używać zmiennych np.: */
